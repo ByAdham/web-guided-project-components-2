@@ -3,6 +3,8 @@ import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 
 const result = axios.get('https://lambda-times-api.herokuapp.com/friends')
 
+console.log(result)
+
 // Imports at the top of the file!
 // We never nest imports inside blocks of code!
 
