@@ -9,7 +9,6 @@ axios.get('https://lambda-times-api.herokuapp.com/friends')
     // freedom to assume the future data is here (but ONLY here)
     console.log('2 here is the response organized by axios', res)
     console.log('here is the response BODY', res.data)
-    throw new Error()
   })
   .catch(drama => {
     // handle the drama
