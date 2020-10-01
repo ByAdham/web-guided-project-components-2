@@ -8,7 +8,7 @@ axios.get('https://lambda-times-api.herokuapp.com/friends')
     // future code, for when the data actually arrives
     // freedom to assume the data is here
     console.log('2 here is the future data', futureData)
-  })
+  }).catch()
 
 console.log('3 We requested data with axios')
 
