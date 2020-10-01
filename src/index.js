@@ -1,4 +1,4 @@
-import { axios } from 'axios' // IF YOU INSTALLED AXIOS VIA npm
+import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 // IF YOU SIMPLY USED A SCRIPT TAG, NO IMPORT IS REQUIRED!!!!!!
 
 console.log(axios)
