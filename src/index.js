@@ -3,7 +3,7 @@ import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 
 console.log('1 About to fetch data with axios')
 
-axios.get('https://lambda-times-api.herokuapp.com/friends')
+axios.get('https://lambda-times-api.herokuapp.com/FOOBAR')
   .then(res => {
     // future code, for when the data actually arrives
     // freedom to assume the future data is here (but ONLY here)
