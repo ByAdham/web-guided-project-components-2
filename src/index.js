@@ -3,15 +3,15 @@ import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 
 const result = axios.get('https://lambda-times-api.herokuapp.com/friends')
 
-console.log('About to fetch data with axios')
+console.log('1 About to fetch data with axios')
 
 result.then(futureData => {
   // future code, for when the data actually arrives
   // freedom to assume the data is here
-  console.log(futureData)
+  console.log('2 here is the future data', futureData)
 })
 
-console.log('We requested data with axios')
+console.log('3 We requested data with axios')
 
 // Imports at the top of the file!
 // We never nest imports inside blocks of code!
