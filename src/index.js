@@ -93,6 +93,20 @@ axios.get('https://dog.ceo/api/breed/labrador/images/random/6')
     debugger
   })
 
+
+fetch('https://dog.ceo/api/breed/labrador/images/random/6')
+  .then(res => {
+    // the body is not in yet, only headers
+    return res.json()
+  })
+  .then(parsedJSON => {
+    // here is the data!!!!
+    debugger
+  })
+  .catch(err => {
+    debugger
+  })
+
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
 
