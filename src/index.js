@@ -83,7 +83,11 @@ function dogCardMaker({ imageURL, breed }) {
 axios.get('https://dog.ceo/api/breed/labrador/images/random/6')
   .then(res => {
     const images = res.data.message
-    console.log(images)
+    images.forEach(image => {
+      const dogCard = dogCardMaker({ imageURL: image, breed: 'labrador' })
+      console.log(dogCard)
+      // append it to the DOM
+    })
   })
   .catch(err => {
     debugger
