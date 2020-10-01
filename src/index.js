@@ -15,6 +15,9 @@ axios.get('https://lambda-times-api.herokuapp.com/friends')
     console.log(drama)
   })
 
+// if you want to handle several independent promises
+// Promise.all().then()
+
 // the future data is NOT ins this area of the program
 console.log('3 We requested data with axios')
 
