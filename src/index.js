@@ -9,6 +9,8 @@ axios.get('https://lambda-times-api.herokuapp.com/friends')
     // freedom to assume the data is here
     console.log('2 here is the response organized by axios', res)
     console.log('here is the RESPONSE BODY', res.data)
+
+    axios.get()
   })
   .catch(drama => {
     // handle the drama
@@ -16,7 +18,7 @@ axios.get('https://lambda-times-api.herokuapp.com/friends')
   })
 
 // if you want to handle several independent promises
-// Promise.all().then()
+// Promise.all([p1, p2, p3]).then([res1, res2, res3])
 
 // the future data is NOT ins this area of the program
 console.log('3 We requested data with axios')
