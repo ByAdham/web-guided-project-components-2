@@ -4,11 +4,11 @@ import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 console.log('1 About to fetch data with axios')
 
 axios.get('https://lambda-times-api.herokuapp.com/friends')
-  .then(futureData => {
+  .then(res => {
     // future code, for when the data actually arrives
     // freedom to assume the data is here
-    console.log('2 here is the future data', futureData)
-    console.log('here is the RESPONSE BODY', futureData.data)
+    console.log('2 here is the response organized by axios', res)
+    console.log('here is the RESPONSE BODY', res.data)
   })
   .catch(drama => {
     // handle the drama
