@@ -1,7 +1,7 @@
 import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 // IF YOU SIMPLY USED A SCRIPT TAG, NO IMPORT IS REQUIRED!!!!!!
 
-console.log(axios)
+const result = axios.get()
 
 // Imports at the top of the file!
 // We never nest imports inside blocks of code!
