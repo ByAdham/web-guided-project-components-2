@@ -8,6 +8,7 @@ axios.get('https://lambda-times-api.herokuapp.com/friends')
     // future code, for when the data actually arrives
     // freedom to assume the data is here
     console.log('2 here is the future data', futureData)
+    console.log('here is the RESPONSE BODY', futureData.data)
   })
   .catch(drama => {
     // handle the drama
