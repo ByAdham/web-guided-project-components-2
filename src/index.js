@@ -1,15 +1,14 @@
 import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 // IF YOU SIMPLY USED A SCRIPT TAG, NO IMPORT IS REQUIRED!!!!!!
 
-const result = axios.get('https://lambda-times-api.herokuapp.com/friends')
-
 console.log('1 About to fetch data with axios')
 
-result.then(futureData => {
-  // future code, for when the data actually arrives
-  // freedom to assume the data is here
-  console.log('2 here is the future data', futureData)
-})
+axios.get('https://lambda-times-api.herokuapp.com/friends')
+  .then(futureData => {
+    // future code, for when the data actually arrives
+    // freedom to assume the data is here
+    console.log('2 here is the future data', futureData)
+  })
 
 console.log('3 We requested data with axios')
 
