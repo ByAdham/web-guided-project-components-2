@@ -13,6 +13,7 @@ axios.get('https://lambda-times-api.herokuapp.com/FOOBAR')
   .catch(drama => {
     // handle the drama
     console.log(drama)
+    de
   })
 
 // if you want to handle several independent promises
