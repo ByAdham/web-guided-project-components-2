@@ -80,9 +80,10 @@ function dogCardMaker({ imageURL, breed }) {
 //    * ON SUCCESS: use the data to create dogCards and append them to the entry point
 //    * ON FAILURE: log the error to the console put breakpoint
 //    * IN ANY CASE: log "done" to the console
-axios.get('https://dog.ceo/api/breed/labrador/images/randommmmmmmmmmmmmmm/6')
+axios.get('https://dog.ceo/api/breed/labrador/images/random/6')
   .then(res => {
-    debugger
+    const images = res.data.message
+    console.log(images)
   })
   .catch(err => {
     debugger
