@@ -1,3 +1,5 @@
+import { axios } from 'axios'
+
 // Imports at the top of the file!
 // We never nest imports inside blocks of code!
 
