@@ -3,12 +3,13 @@ import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 
 console.log('1 About to fetch data with axios')
 
-axios.get('https://lambda-times-api.herokuapp.com/FOOBAR')
+axios.get('https://lambda-times-api.herokuapp.com/friends')
   .then(res => {
     // future code, for when the data actually arrives
     // freedom to assume the future data is here (but ONLY here)
     console.log('2 here is the response organized by axios', res)
     console.log('here is the response BODY', res.data)
+    throw new Error()
   })
   .catch(drama => {
     // handle the drama
@@ -19,7 +20,7 @@ axios.get('https://lambda-times-api.herokuapp.com/FOOBAR')
 // if you want to handle several independent promises
 // Promise.all([p1, p2, p3]).then([res1, res2, res3])
 
-// the future data is NOT in this area of the program
+// the future data is NOT ins this area of the program
 console.log('3 We requested data with axios')
 
 // Imports at the top of the file!
