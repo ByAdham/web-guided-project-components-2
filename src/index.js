@@ -8,6 +8,7 @@ console.log(result) // the data is not here
 result.then(futureData => {
   // future code, for when the data actually arrives
   // freedom to assume the data is here
+  console.log(futureData)
 })
 
 // Imports at the top of the file!
