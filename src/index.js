@@ -1,7 +1,7 @@
 import axios from 'axios' // IF YOU INSTALLED AXIOS VIA npm
 // IF YOU SIMPLY USED A SCRIPT TAG, NO IMPORT IS REQUIRED!!!!!!
 
-const result = axios.get('https://lambda-times-api.herokuapp.com:3000/friends')
+const result = axios.get('https://lambda-times-api.herokuapp.com/friends')
 
 // Imports at the top of the file!
 // We never nest imports inside blocks of code!
